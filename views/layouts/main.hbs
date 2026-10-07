@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản lý Sách - {{STUDENT_ID}}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 16px; color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f0f4f8; }
+    form { display: grid; gap: 8px; max-width: 420px; }
+    input, button { padding: 8px; font-size: 1rem; }
+    .msg { padding: 10px; border-radius: 6px; }
+    .error { background: #fde8e8; color: #9b1c1c; }
+    .success { background: #e6f4ea; color: #1e6b34; }
+    footer { margin-top: 32px; padding-top: 12px; border-top: 2px solid #333; font-weight: 600; }
+  </style>
+</head>
+<body>
+  {{{body}}}
+  <footer>
+    Họ tên: {{STUDENT_NAME}} | MSSV: {{STUDENT_ID}} | Mức VAT áp dụng: {{VAT_RATE}}%
+  </footer>
+</body>
+</html>

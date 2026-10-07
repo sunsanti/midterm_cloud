@@ -1,0 +1,11 @@
+<h1>Quản lý Sách</h1>
+
+<h2>Danh sách sách</h2>
+<table>
+  <tr><th>Mã SP</th><th>Tên sách</th><th>Giá gốc</th><th>VAT</th><th>Giá sau thuế</th></tr>
+  {{#each books}}
+  <tr><td>{{code}}</td><td>{{title}}</td><td>{{price}}</td><td>{{vatRate}}%</td><td>{{priceAfterVat}}</td></tr>
+  {{else}}
+  <tr><td colspan="5">Chưa có sách nào.</td></tr>
+  {{/each}}
+</table>
