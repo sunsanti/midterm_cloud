@@ -1,4 +1,6 @@
 <h1>Quản lý Sách</h1>
+{{#if flash}}<p class="msg success">{{flash}}</p>{{/if}}
+<p><small>Session (lưu trên MongoDB Atlas): <code>{{sessionId}}</code> — số lần xem: <b>{{views}}</b> — số sách bạn đã thêm trong phiên này: <b>{{addedCount}}</b></small></p>
 
 <h2>Danh sách sách</h2>
 <table>
