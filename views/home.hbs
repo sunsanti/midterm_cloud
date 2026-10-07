@@ -9,3 +9,12 @@
   <tr><td colspan="5">Chưa có sách nào.</td></tr>
   {{/each}}
 </table>
+
+<h2>Thêm sách mới</h2>
+{{#if error}}<p class="msg error">{{error}}</p>{{/if}}
+<form method="POST" action="/books">
+  <input name="code" placeholder="Mã SP (bắt đầu bằng {{CODE_PREFIX}}, vd {{CODE_PREFIX}}001)" required>
+  <input name="title" placeholder="Tên sách" required>
+  <input name="price" type="number" min="0" step="any" placeholder="Giá gốc (VNĐ)" required>
+  <button type="submit">Thêm sách (tự tính VAT {{VAT_RATE}}%)</button>
+</form>
